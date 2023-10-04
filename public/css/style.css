@@ -1,0 +1,146 @@
+/*
+Name: Shivam Balar
+Sction: 028
+Student Id : 301291367
+Date: 10-03-2023
+*/
+
+
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #336699, #003366);     color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh; 
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px; 
+}
+
+/* Style links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+.form-container {
+    background-color: #CCC;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+    width: 50%;
+    margin:auto;
+}
+
+.form-input {
+    width: 99%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.form-submit:hover {
+    background-color: #0056b3;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #007bff;
+}
+
+.form-element {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border:#007bff;
+}
+

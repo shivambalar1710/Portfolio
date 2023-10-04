@@ -1,0 +1,43 @@
+<!-- views/contact.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <center><h1>Contact Me</h1></center>
+    
+    
+
+<center><h2>Contact Form</h2></center>
+    <div class="form-container">
+
+    <form action="/contact" method="POST">
+        <div class="form-element">
+            <label class="form-label" for="name">Name:</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Enter Your Name" required>
+        </div>
+        <div class="form-element">
+            <label class="form-label" for="email">Email:</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="Enter Your Email" required>
+        </div>
+        <div class="form-element">
+            <label class="form-label" for="phone">Phone Number:</label>
+            <input class="form-input" type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+        </div>
+        <div class="form-element">
+            <label class="form-label" for="message">Message:</label>
+            <textarea class="form-input" id="message" name="message" rows="4"placeholder="Enter Your Message" required></textarea>
+        </div  class="form-element">
+            <button class="form-submit" type="submit">Send</button>
+        </div>
+    </form>
+</div>
+<%- include('partials/footer.ejs') %>
+
+</body>
+</html>

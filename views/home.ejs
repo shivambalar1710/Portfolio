@@ -1,0 +1,25 @@
+<!-- views/home.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    
+    <!-- Include your logo using an <img> element -->
+    <img src="/images/logo.png" alt="Logo" width="100" height="100">
+    <br><br>
+    <h1><center>Welcome, <%= name %></center></h1>
+    <center><img src="/images/profile.png" alt="profile" width="400" height="400"> </center>
+    
+    <p><%= bio %></p>
+    
+    <a href="/about">Learn more</a>
+
+</body>
+
+</html>

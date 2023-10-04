@@ -1,0 +1,27 @@
+<!-- views/services.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    
+    <!-- Include your logo using an <img> element -->
+    <img src="<%= logoSrc %>" alt="Logo" width="100" height="100">
+    
+    <h1>Services</h1>
+    
+    <!-- Display a list of services -->
+    <ul>
+        <% services.forEach((service) => { %>
+            <li><%= service %></li>
+        <% }); %>
+    </ul>
+    <%- include('partials/footer.ejs') %>
+
+</body>
+</html>

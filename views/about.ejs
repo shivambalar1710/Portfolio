@@ -1,0 +1,28 @@
+<!-- views/about.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    
+    <!-- Include your logo using an <img> element -->
+    <img src="/images/logo.png" alt="Logo" width="100" height="100">
+    
+    <h1>About Me</h1>
+    
+    <p><%= bio %></p>
+    
+    <h2>Contact Me</h2>
+    
+    <!-- Add the contact form here -->
+
+    <a href="<%= resumeLink %>" target="_blank">Download Resume (PDF)</a>
+
+</body>
+
+</html>
